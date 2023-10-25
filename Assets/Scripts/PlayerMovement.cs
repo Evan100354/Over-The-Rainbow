@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public Rigidbody rb;
     public bool grounded = false;
+    public bool forward = true;
 
     float horizontalnput;
 
@@ -16,8 +17,19 @@ public class PlayerMovement : MonoBehaviour
     {
         //Constantly moves player forward
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-        Vector3 horizontalMove = transform.right * horizontalnput * speed * Time.fixedDeltaTime;
-        rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        Vector3 horizontalMove = transform.right * horizontalnput * speed * Time.fixedDeltaTime * -1;
+        Vector3 backMove = transform.forward * speed * Time.fixedDeltaTime * -1;
+
+        //while(forward == true)
+        {
+            rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        }
+        
+
+        if (Input.GetKeyDown("w"))
+        {
+            rb.MovePosition(rb.position + backMove + horizontalMove);
+        }
     }
 
     private void Update()
