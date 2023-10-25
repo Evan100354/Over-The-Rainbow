@@ -435,6 +435,7 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 268315570}
   grounded: 0
+  forward: 1
 --- !u!54 &268315570
 Rigidbody:
   m_ObjectHideFlags: 0
