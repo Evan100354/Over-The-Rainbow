@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Death"))
         {
             Destroy(gameObject);
             SceneManager.LoadScene("Game Over");
