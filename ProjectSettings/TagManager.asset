@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Death
+  - Ground
+  - Player Wall
   layers:
   - Default
   - TransparentFX

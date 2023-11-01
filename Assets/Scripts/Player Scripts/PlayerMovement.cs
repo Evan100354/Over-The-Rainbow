@@ -58,7 +58,14 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
-        grounded = true;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            grounded = true;
+        }
+        if(collision.gameObject.CompareTag("Player Wall"))
+        {
+            grounded = false;
+        }
     }
 
     void OnCollisionExit(Collision collision)
