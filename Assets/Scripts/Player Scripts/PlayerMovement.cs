@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalnput;
 
+    public Animator animator;
     private void FixedUpdate()
     {
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("space") && grounded)
         {
             rb.AddForce(Vector3.up * jumpForce);
+            animator.Play("Jumping");
         }
 
         horizontalMove.Normalize();
@@ -74,15 +76,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-    /*SCRIPT IDEAS
-     * In order for the ability to move back in a certain space while still moving the gameplay forward we could use a while loop
-     * with an if statement and a bool maybe...?
-     * something like; while(moveBack == true)
-     *                 {
-     *                      if(Input.GetKeyDown("s"))
-     *                      {
-     *                          move back script or smn idk bro im losin myself
-     *                      }
-     *                 }
-     *                 
-     */

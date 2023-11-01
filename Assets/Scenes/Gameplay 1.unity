@@ -878,6 +878,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfdbabc6ddb9b934fa416e997dbe2395, type: 3}
   m_PrefabInstance: {fileID: 453247363}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &453383973 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 238063284269187903, guid: 692c590a2d4a4ab469ddbc00c9c4fc50, type: 3}
+  m_PrefabInstance: {fileID: 1791866570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &525760515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2026,7 +2031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6535600561861546082, guid: bf2a647f05df3254488699837b611164, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6535600561861546082, guid: bf2a647f05df3254488699837b611164, type: 3}
       propertyPath: m_TagString
@@ -2685,6 +2690,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 238063284498863543, guid: 692c590a2d4a4ab469ddbc00c9c4fc50, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 453383973}
     - target: {fileID: 238063284498863543, guid: 692c590a2d4a4ab469ddbc00c9c4fc50, type: 3}
       propertyPath: jumpForce
       value: 200
