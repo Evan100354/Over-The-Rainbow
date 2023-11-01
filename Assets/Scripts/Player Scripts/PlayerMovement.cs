@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float jumpForce = 5f;
-    public static float speed = 5f;
+    public static float speed = 10f;
     public Rigidbody rb;
     public bool grounded = false;
     public bool forward = true;
@@ -15,35 +15,46 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Constantly moves player forward
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalnput * speed * Time.fixedDeltaTime * -1;
         Vector3 backMove = transform.forward * speed * Time.fixedDeltaTime * -1;
 
-        //while(forward == true)
+        //Constantly moves player forward
+        rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        
+        //Player inputs for movement
+        if (Input.GetKey("s"))
+        {
+            rb.MovePosition(rb.position + (backMove * 2) + horizontalMove);
+        }
+        if (Input.GetKey("w"))
         {
             rb.MovePosition(rb.position + forwardMove + horizontalMove);
         }
-        
 
-        if (Input.GetKeyDown("w"))
+
+        //Left, Right and Jump Inputs
+        horizontalnput = Input.GetAxis("Horizontal");
+        if (Input.GetKey("space") && grounded)
         {
-            rb.MovePosition(rb.position + backMove + horizontalMove);
+            rb.AddForce(Vector3.up * jumpForce);
         }
+
+        horizontalMove.Normalize();
     }
 
     private void Update()
     {
-        //Left, Right and Jump Inputs
-        horizontalnput = Input.GetAxis("Horizontal");
-        if(Input.GetKeyDown("space") && grounded)
-        {
-            rb.AddForce(Vector3.up * jumpForce);
-        }
+
     }
 
     //GroundCheck
     void OnCollisionEnter(Collision collision)
+    {
+        grounded = true;
+    }
+
+    void OnCollisionStay(Collision collision)
     {
         grounded = true;
     }

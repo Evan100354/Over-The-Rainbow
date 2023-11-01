@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class BossMovement : MonoBehaviour
 {
-    //public float jumpForce = 5f;
-    public float speed = 5f;
-    public Rigidbody rb;
-    //public bool grounded = false;
-
-    float horizontalnput;
+    public float bossspeed = 10f;
+    public Rigidbody rbBoss;
 
     private void FixedUpdate()
     {
-        //Constantly moves player forward
-        Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
-        Vector3 horizontalMove = transform.right * horizontalnput * speed * Time.fixedDeltaTime;
-        rb.MovePosition(rb.position + forwardMove + horizontalMove);
+        Vector3 forwardMove = transform.right * bossspeed * Time.fixedDeltaTime;
+
+        rbBoss.MovePosition(rbBoss.position + forwardMove);
     }
 }
