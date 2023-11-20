@@ -24,11 +24,11 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
         
         //Player inputs for movement
-        if (Input.GetKey("s"))
+        if (Input.GetKey("w"))
         {
             rb.MovePosition(rb.position + (backMove * 2) + horizontalMove);
         }
-        if (Input.GetKey("w"))
+        if (Input.GetKey("s"))
         {
             rb.MovePosition(rb.position + forwardMove + horizontalMove);
         }
@@ -45,10 +45,6 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove.Normalize();
     }
 
-    private void Update()
-    {
-
-    }
 
     //GroundCheck
     void OnCollisionEnter(Collision collision)
