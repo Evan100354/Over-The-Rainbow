@@ -20,14 +20,14 @@ public class ObstacleSlow : MonoBehaviour
     {
         //Instantiate(pickupEffect, transform.position, transform.rotation);
 
-        PlayerMovement.speed = 2.5f;
+        PlayerMovement.speed = 1.25f;
 
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
         yield return new WaitForSeconds(duration);
 
-        PlayerMovement.speed = 10f;
+        PlayerMovement.speed = 5f;
 
         Destroy(gameObject);
     }

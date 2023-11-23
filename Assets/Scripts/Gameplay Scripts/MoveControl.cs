@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveControl : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 5f;
     public Rigidbody rb;
 
     private void FixedUpdate()
