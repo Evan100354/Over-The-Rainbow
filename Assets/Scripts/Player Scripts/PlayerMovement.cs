@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public bool grounded = false;
     public bool forward = true;
 
+    public GameObject footstep;
+    public GameObject jump;
+
     float horizontalnput;
 
     public Animator animator;
@@ -45,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove.Normalize();
     }
 
+    void Update()
+    {
+        footsteps();
+        jumping();
+    }
 
     //GroundCheck
     void OnCollisionEnter(Collision collision)
@@ -76,6 +84,30 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene("Game Over");
+        }
+    }
+
+    void footsteps()
+    {
+        if (grounded == true)
+        {
+            footstep.SetActive(true);
+        }
+        else
+        {
+            footstep.SetActive(false);
+        }
+    }
+
+    void jumping()
+    {
+        if (grounded == false)
+        {
+            jump.SetActive(true);
+        }
+        else
+        {
+            jump.SetActive(false);
         }
     }
 }
