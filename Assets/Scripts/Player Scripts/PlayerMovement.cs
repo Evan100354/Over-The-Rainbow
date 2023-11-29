@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float jumpForce = 5f;
-    public static float speed = 5f;
+    public static float speed = 7.5f;
     public Rigidbody rb;
     public bool grounded = false;
     public bool forward = true;
