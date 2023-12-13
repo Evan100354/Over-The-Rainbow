@@ -94,7 +94,7 @@ public class NewPlayerMovement : MonoBehaviour
 
         //Check if grounded by raycast
 
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ground);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.5f, ground);
 
         //Apply resistance to speed if grounded
 
