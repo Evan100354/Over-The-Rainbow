@@ -112,14 +112,17 @@ public class NewPlayerMovement : MonoBehaviour
         speedLimit();
         StateHandler();
 
-        if(Input.GetKeyDown("w")|| Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
-        {
-            anim.SetFloat("Walk", 1);
-        }
+        Vector3 currentSpeed = (rb.velocity.x, rb.velocity.y, rb.velocity.z);
 
-        if (Input.GetKeyUp("w") || Input.GetKeyUp("a") || Input.GetKeyUp("s") || Input.GetKeyUp("d"))
+        if(rb.velocity = 0)
         {
             anim.SetFloat("Walk", 0);
+            anim.Play("Idle");
+        }
+
+        if (Input.GetKeyDown("w")|| Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
+        {
+            anim.SetFloat("Walk", 1);
         }
 
         if (Input.GetKeyDown("left shift"))
