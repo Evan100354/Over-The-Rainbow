@@ -6222,6 +6222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RollBarrel (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
       value: -3
@@ -6302,6 +6306,10 @@ PrefabInstance:
     - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_Name
       value: RollBarrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 5658704258604860466, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_RootOrder
@@ -8320,6 +8328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RollBarrel (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
       value: -3
@@ -8400,6 +8412,10 @@ PrefabInstance:
     - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_Name
       value: RollBarrel (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
@@ -16236,6 +16252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RollBarrel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
       value: -5
@@ -17723,6 +17743,10 @@ PrefabInstance:
     - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_Name
       value: RollBarrel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 5658704258604860466, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_RootOrder
@@ -19974,6 +19998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RollBarrel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 5658704258604860466, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -20446,6 +20474,10 @@ PrefabInstance:
     - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_Name
       value: RollBarrel (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
@@ -21414,7 +21446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1396591190
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21426,7 +21458,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c4171fd9fdc729a4492446a96eccb211, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.344
   m_Pitch: 1
   Loop: 0
@@ -27251,7 +27283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1752253663
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27263,7 +27295,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 741af9b1b5ae3c14c89b104cb9241f4f, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
@@ -28143,6 +28175,10 @@ PrefabInstance:
     - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_Name
       value: RollBarrel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
@@ -29395,6 +29431,10 @@ PrefabInstance:
     - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: m_Name
       value: RollBarrel (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029413740342304392, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
+      propertyPath: m_TagString
+      value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 5263996545779605980, guid: d5ce6f51aca0be64b9834e14ca3bd671, type: 3}
       propertyPath: leftPos
