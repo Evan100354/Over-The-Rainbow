@@ -112,13 +112,14 @@ public class NewPlayerMovement : MonoBehaviour
         speedLimit();
         StateHandler();
 
-        Vector3 currentSpeed = (rb.velocity.x, rb.velocity.y, rb.velocity.z);
+        /* Vector3 currentSpeed = (rb.velocity.x, rb.velocity.y, rb.velocity.z);
 
         if(rb.velocity = 0)
         {
             anim.SetFloat("Walk", 0);
             anim.Play("Idle");
         }
+        */
 
         if (Input.GetKeyDown("w")|| Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
         {
