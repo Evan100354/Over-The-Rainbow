@@ -869,8 +869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbe851b9b2af8f447bf665d2021218ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  sprintSpeed: 8
+  walkSpeed: 3
+  sprintSpeed: 5
   anim: {fileID: 1879721645}
   sprintKey: 304
   Orientation: {fileID: 1479217272}
