@@ -87,6 +87,9 @@ public class NewPlayerMovement : MonoBehaviour
             Jump();
 
             Invoke(nameof(resetJump), jumpCooldown);
+
+            anim.SetTrigger("Jump");
+            anim.SetTrigger("Land");
         }
     }
 
