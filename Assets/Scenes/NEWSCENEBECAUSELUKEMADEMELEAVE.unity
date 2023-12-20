@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   sprintSpeed: 8
+  anim: {fileID: 0}
   sprintKey: 304
   Orientation: {fileID: 1810759101}
   playerHeight: 2
@@ -297,6 +298,10 @@ PrefabInstance:
     - target: {fileID: 6498106030642307275, guid: 6e8b654670ce56f45be6d5ce8fe46efc, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498106030642307275, guid: 6e8b654670ce56f45be6d5ce8fe46efc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498106030642307284, guid: 6e8b654670ce56f45be6d5ce8fe46efc, type: 3}
       propertyPath: m_RootOrder
@@ -866,6 +871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   sprintSpeed: 8
+  anim: {fileID: 1879721645}
   sprintKey: 304
   Orientation: {fileID: 1479217272}
   playerHeight: 1
@@ -920,11 +926,30 @@ CapsuleCollider:
   m_Height: 0.06
   m_Direction: 1
   m_Center: {x: 0, y: 0.029, z: 0}
+--- !u!95 &1879721645 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 053a4ed4c00048f48a8055551095d11e, type: 3}
+  m_PrefabInstance: {fileID: 2131299144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1879721646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400022, guid: 053a4ed4c00048f48a8055551095d11e, type: 3}
   m_PrefabInstance: {fileID: 2131299144}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1879721647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879721640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89aa8bda247201f48a11dec2ab463f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 1879721646}
+  _rotationSpeed: 100
 --- !u!1001 &2131299144
 PrefabInstance:
   m_ObjectHideFlags: 0

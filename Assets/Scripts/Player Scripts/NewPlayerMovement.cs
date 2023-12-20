@@ -10,6 +10,7 @@ public class NewPlayerMovement : MonoBehaviour
     private float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
+    public Animator anim;
 
     public KeyCode sprintKey = KeyCode.LeftShift;
 
@@ -110,6 +111,27 @@ public class NewPlayerMovement : MonoBehaviour
         myInput();
         speedLimit();
         StateHandler();
+
+        if(Input.GetKeyDown("w")|| Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
+        {
+            anim.SetFloat("Walk", 1);
+        }
+
+        if (Input.GetKeyUp("w") || Input.GetKeyUp("a") || Input.GetKeyUp("s") || Input.GetKeyUp("d"))
+        {
+            anim.SetFloat("Walk", 0);
+        }
+
+        if (Input.GetKeyDown("left shift"))
+        {
+            anim.SetFloat("Run", 1);
+            anim.SetFloat("Walk", 0);
+        }
+
+        if (Input.GetKeyUp("left shift"))
+        {
+            anim.SetFloat("Run", 0);
+        }
     }
 
     private void movePlayer()
