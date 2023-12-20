@@ -126,6 +126,11 @@ public class NewPlayerMovement : MonoBehaviour
             anim.SetFloat("Walk", 1);
         }
 
+        if (Input.GetKeyDown("w") && Input.GetKeyDown("a") && Input.GetKeyDown("s") && Input.GetKeyDown("d"))
+        {
+            anim.Play("Idle");
+        }
+
         if (Input.GetKeyDown("left shift"))
         {
             anim.SetFloat("Run", 1);
