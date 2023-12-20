@@ -13,6 +13,9 @@ public class NewPlayerMovement : MonoBehaviour
     public float sprintSpeed;
     public Animator anim;
 
+    public GameObject footstep;
+    public GameObject jump;
+
     public KeyCode sprintKey = KeyCode.LeftShift;
 
     public Transform Orientation;
@@ -208,5 +211,29 @@ public class NewPlayerMovement : MonoBehaviour
     private void resetJump()
     {
         canJump = true;
+    }
+
+    void footsteps()
+    {
+        if (grounded == true)
+        {
+            footstep.SetActive(true);
+        }
+        else
+        {
+            footstep.SetActive(false);
+        }
+    }
+
+    void jumping()
+    {
+        if (grounded == false)
+        {
+            jump.SetActive(true);
+        }
+        else
+        {
+            jump.SetActive(false);
+        }
     }
 }
