@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewPlayerMovement : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class NewPlayerMovement : MonoBehaviour
 
     float horizontalInput;
     float verticalInput;
+
+    public string gameOverScene;
 
     Vector3 moveDirection;
 
@@ -90,6 +93,15 @@ public class NewPlayerMovement : MonoBehaviour
 
             anim.SetTrigger("Jump");
             anim.SetTrigger("Land");
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Death"))
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene(gameOverScene);
         }
     }
 

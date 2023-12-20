@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public bool grounded = false;
     public bool forward = true;
+    public string gameOverScene;
 
     public GameObject footstep;
     public GameObject jump;
