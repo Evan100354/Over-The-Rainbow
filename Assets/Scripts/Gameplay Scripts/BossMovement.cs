@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BossMovement : MonoBehaviour
 {
-    public float bossspeed = 10f;
+    public float bossspeed = 5f;
     public Rigidbody rbBoss;
 
     private void FixedUpdate()
     {
-        Vector3 forwardMove = transform.right * bossspeed * Time.fixedDeltaTime;
+        Vector3 forwardMove = transform.forward * bossspeed * Time.fixedDeltaTime;
 
         rbBoss.MovePosition(rbBoss.position + forwardMove);
     }
