@@ -25600,36 +25600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8336c97dce20e4eb7ee5904e7e03d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1592652075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592652072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbe851b9b2af8f447bf665d2021218ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 4
-  sprintSpeed: 7
-  anim: {fileID: 1592652078}
-  footstep: {fileID: 1752253662}
-  jump: {fileID: 1396591189}
-  sprintKey: 304
-  Orientation: {fileID: 1881539015}
-  gameOverScene: Game Over
-  playerHeight: 1
-  groundResistance: 5
-  ground:
-    serializedVersion: 2
-    m_Bits: 512
-  jumpForce: 10
-  jumpCooldown: 0.4
-  airMultiplier: 0.5
-  jumpKey: 32
-  state: 0
 --- !u!136 &1592652076
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25670,6 +25640,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400022, guid: 053a4ed4c00048f48a8055551095d11e, type: 3}
   m_PrefabInstance: {fileID: 209086324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592652080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592652072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6857bf2ca515a45be5a59594169bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  sprintSpeed: 7
+  anim: {fileID: 1592652078}
+  footstep: {fileID: 1752253662}
+  jump: {fileID: 1396591189}
+  sprintKey: 304
+  Orientation: {fileID: 1881539015}
+  gameOverScene: Game Over
+  playerHeight: 1
+  groundResistance: 5
+  ground:
+    serializedVersion: 2
+    m_Bits: 512
+  jumpForce: 10
+  jumpCooldown: 0.4
+  airMultiplier: 0.5
+  jumpKey: 32
+  state: 0
 --- !u!1001 &1599638766
 PrefabInstance:
   m_ObjectHideFlags: 0
