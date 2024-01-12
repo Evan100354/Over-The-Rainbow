@@ -2700,7 +2700,7 @@ GameObject:
   - component: {fileID: 322845857}
   - component: {fileID: 322845856}
   m_Layer: 6
-  m_Name: GamblerCatforTitleScreen
+  m_Name: GamblerCatforDeathScreen1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3693,7 +3693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f97a69052c4845468b84ee7062cd6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: Gameplay 2
+  Scene: AlphaSetup1
 --- !u!114 &427456445
 MonoBehaviour:
   m_ObjectHideFlags: 0
