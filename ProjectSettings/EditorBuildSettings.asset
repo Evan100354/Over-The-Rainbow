@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreenLVL3.unity
     guid: 041d3eb284eb1874cb2834fdecdec6dd
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Victory.unity
+    guid: ead30547d04a3e14aaf8daedccf7b8a1
   - enabled: 0
     path: Assets/Scenes/Demo End.unity
     guid: 9e93797cfd44892468f65df02aac952a
