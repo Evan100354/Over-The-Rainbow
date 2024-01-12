@@ -4295,8 +4295,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 345284806}
-        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+      - m_Target: {fileID: 345284802}
+        m_TargetAssemblyTypeName: ButtonSceneChange, Assembly-CSharp
         m_MethodName: quitGame
         m_Mode: 1
         m_Arguments:
