@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AlphaSetup1.unity
     guid: b2bbf3c81e9d5394c8f438f9f7b90453
   - enabled: 1
+    path: Assets/Scenes/DeathScreenLVL1.unity
+    guid: 8e20d75c2d5f6f04ca37889c647ec02c
+  - enabled: 1
     path: Assets/Scenes/Gameplay 2.unity
     guid: 14e2ac99cbfac1f40b5db724c719fb28
   - enabled: 1
